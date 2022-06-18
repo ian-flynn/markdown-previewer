@@ -4,8 +4,8 @@ import TextEditor from "./comps/TextEditor";
 
 
 function App() {
-  const initialInput =`# Welcome to my React Markdown Previewer!
-
+  const initialInput =`
+    # Welcome to my React Markdown Previewer!
     ## This is a sub-heading...
     ### And here's some other cool stuff:
     
