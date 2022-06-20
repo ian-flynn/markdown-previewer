@@ -5,9 +5,9 @@ const TextEditor = ({editorText, setEditorText,}) => {
         setEditorText(e.target.value);
     }
     return (
-        <div className="editor-box">
-            <div>text editor - h1 h2 link inlinecode codeblock listitem blockquote image boldedtext</div>
-             <textarea id="editor" type="text" onChange={handleChange} value={editorText}/>
+        <div className="wrapper-box">
+            <div className="box-title">Editor</div>
+            <textarea id="editor" type="text" onChange={handleChange} value={editorText}/>
         </div>
     )
 }

@@ -2,16 +2,26 @@ body {
     background-color: pink;
     margin-top: 20em;
 }
-.editor-box {
-    width: 75%;
-    max-width: 600px;
-    margin: auto;
+.box-title {
+    writing-mode: vertical-rl;   
 }
+.wrapper-box {
+    display: flex;
+    justify-content: center;
+}
+
+/* EDITOR */
+
+#editor {
+    width: 600px;
+    height: 300px;
+}
+
+/* PREVIEWER */
 
 #preview {
     width: 80%;
     min-width: 80%;
     max-width: 650px;
     background-color: red;
-    margin: auto;
 }
