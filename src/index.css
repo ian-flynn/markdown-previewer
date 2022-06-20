@@ -1,21 +1,38 @@
-root {
-    font-size: ;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+:root {
+    --clr-light: #FDF5DF;
+    --clr-dark: #490B3D;
+    --clr-medium: #BD1E51;
+    --clr-accent: #F1B814;
+    --fw-main: 300;
+    --fw-bold: 500;
+}
+
+html {
+    font-size: 10px;
 }
 body {
-    background-color: pink;
+    background-color: var(--clr-light);
     margin-top: 3em;
     box-sizing: border-box;
-}
-.box-title {
-    writing-mode: vertical-rl; 
-    background-color: orange;
-    padding: 5px;
+    font-size: 1.6rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: var(--fw-main);
 }
 .wrapper-box {
     display: flex;
     justify-content: center;
     align-items: stretch;
     margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.box-title {
+    writing-mode: vertical-rl; 
+    background-color: var(--clr-dark);
+    color: var(--clr-medium);
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
 }
 
 /* EDITOR */
@@ -23,19 +40,61 @@ body {
 #editor {
     width: 75%;
     height: 300px;
-    max-width: 600px ;
+    max-width: 600px;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    font-size: 1.4rem;
+    box-shadow:7px 7.5px 12px var(--clr-dark);
+    border: var(--clr-medium);
+    padding: 2rem;
+
 }
 
 /* PREVIEWER */
-
 #preview {
     width: 80%;
     min-width: 80%;
     max-width: 650px;
-    background-color: red;
-    padding: 0 1em;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    padding: 0 1rem;
+    /*border-right: .5rem solid var(--clr-dark);
+    border-bottom:  .5rem solid var(--clr-dark); */
+    box-shadow:7px 7.5px 12px var(--clr-dark);
+    border: var(--clr-medium) 1px solid;
+     
+    
 }
+/* Previewer elements */
 #preview img {
     max-width: 90%;
-    margin: 1em;
+    margin: 1.1rem;
+    filter: invert(19%) sepia(55%) saturate(125%) hue-rotate(322deg) brightness(94%) contrast(97%);
 }
+#preview blockquote {
+    border-left: .5rem solid black;
+    padding-left: 5px;
+}
+#preview code {
+    color: var(--clr-medium);
+}
+#preview pre {
+   background-color:hsla(0, 100%, 90%, 0.8);;
+   max-width: 80%;
+   padding: 1rem;
+}
+#preview a {
+   color: var(--clr-medium);
+}
+#preview a:active {
+   color: var(--clr-accent);
+}
+table {
+    border-collapse: collapse;
+}
+td,th {
+    border: .1rem solid var(--clr-medium);
+    padding-left: .8rem;
+    padding-right: .8rem;
+  }
+
