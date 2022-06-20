@@ -8,7 +8,7 @@ const Previewer = ({ editorText }) => {
         <div>
             Previewer
             <div id="preview">
-                <ReactMarkdown children={ editorText } remarkPlugins={[ remarkGfm ]}></ReactMarkdown>
+                <ReactMarkdown children={ editorText } remarkPlugins={[ remarkGfm ]} />
             </div>
 
 
