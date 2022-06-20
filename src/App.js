@@ -18,35 +18,36 @@ function myFunction(p1, p2) {
 }
 \`\`\`
   
-  You can make text **bold**...
-  Or _italic_.
-  Or **_both!_**
+You can make text **bold**...
+Or _italic_.
+Or **_both!_**
   
- You can ~~crossing stuff out~~.
+You can try ~~crossing stuff out~~.
   
-  Here is a [link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) (to a cheatsheet), and
-  > A Block Quote!
+Here is a [link](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) (to a cheatsheet), and
+> A Block Quote!
   
- You can make a table:
+You can make a table:
 
-  | Tables        | Are           | Cool  |
-  | ------------- |:-------------:| -----:|
-  | col 3 is      | right-aligned | $1600 |
-  | col 2 is      | centered      |   $12 |
-  | zebra stripes | are neat      |    $1 |
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
-  - You can make a list
-    - Indentation
-       - Changes
-          - Things
+- You can make a list
+  - Indentation
+     - Changes
+        - Things
   
   
-  1. Make a numbered list
-  1. The numbers don't matter
-  1. Imbed an image!:
+1. Make a numbered list
+1. The numbers don't matter
+1. Imbed an image:
   
-  ![Photo of a beautiful dog](https://www.k9ofmine.com/wp-content/uploads/2018/07/Most-beautiful-dogs.jpg)
-  `;
+![Photo of a beautiful dog](https://www.k9ofmine.com/wp-content/uploads/2018/07/Most-beautiful-dogs.jpg)
+
+### Have Fun!`;
   const [editorText, setEditorText] = useState(initialInput);
   
 
