@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const Previewer = ({ editorText }) => {
 
@@ -7,7 +8,7 @@ const Previewer = ({ editorText }) => {
         <div>
             Previewer
             <div id="preview">
-                <ReactMarkdown>{editorText}</ReactMarkdown>
+                <ReactMarkdown children={ editorText } remarkPlugins={[ remarkGfm ]}></ReactMarkdown>
             </div>
 
 
