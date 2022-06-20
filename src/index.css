@@ -1,20 +1,29 @@
+root {
+    font-size: ;
+}
 body {
     background-color: pink;
-    margin-top: 20em;
+    margin-top: 3em;
+    box-sizing: border-box;
 }
 .box-title {
-    writing-mode: vertical-rl;   
+    writing-mode: vertical-rl; 
+    background-color: orange;
+    padding: 5px;
 }
 .wrapper-box {
     display: flex;
     justify-content: center;
+    align-items: stretch;
+    margin-top: 1.5em;
 }
 
 /* EDITOR */
 
 #editor {
-    width: 600px;
+    width: 75%;
     height: 300px;
+    max-width: 600px ;
 }
 
 /* PREVIEWER */
@@ -24,4 +33,9 @@ body {
     min-width: 80%;
     max-width: 650px;
     background-color: red;
+    padding: 0 1em;
+}
+#preview img {
+    max-width: 90%;
+    margin: 1em;
 }
